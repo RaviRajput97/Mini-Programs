@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+	<title>A Simple Calculator</title>
+</head>
+<body>
+	<div class="formstyle">
+		<form name="forms">
+			<input type="text" name="answer" id="answersty"></br>
+			<input type="button" value=" 1 " class="button" onclick="forms.answer.value += '1'"> <!-- it will not going to add in old value as '1' is a character -->
+			<input type="button" value=" 2 " class="button" onclick="forms.answer.value += '2'">
+			<input type="button" value=" 3 " class="button" onclick="forms.answer.value += '3'">
+			</br></br>
+			<input type="button" value=" 4 " class="button" onclick="forms.answer.value += '4'"> 
+			<input type="button" value=" 5 " class="button" onclick="forms.answer.value += '5'">
+			<input type="button" value=" 6 " class="button" onclick="forms.answer.value += '6'">
+			</br></br>
+			<input type="button" value=" 7 " class="button" onclick="forms.answer.value += '7'"> 
+			<input type="button" value=" 8 " class="button" onclick="forms.answer.value += '8'">
+			<input type="button" value=" 9 " class="button" onclick="forms.answer.value += '9'">
+			</br></br>
+			<input type="button" value=" + " class="button" onclick="forms.answer.value += '+'"> 
+			<input type="button" value=" - " class="button" onclick="forms.answer.value += '-'">
+			<input type="button" value=" * " class="button" onclick="forms.answer.value += '*'">
+			</br></br>
+			<input type="button" value=" / " class="button" onclick="forms.answer.value += '/'"> 
+			<input type="button" value=" 0 " class="button" onclick="forms.answer.value += '0'">
+			<input type="button" value=" = " class="button" onclick="forms.answer.value = eval(forms.answer.value) "> <!-- Here we are using eval() or evaluation which is a javascript function that give output of every parimeter that pass in it -->
+			</br></br>
+			<input type="button" value="Clear All" class="button" onclick="forms.answer.value = '' " id="clear">
+		
+		</form>
+		
+	</div>
+
+</body>
+</html>
